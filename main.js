@@ -2,8 +2,7 @@ const rockBtn = document.getElementById("rock-btn")
 const paperBtn = document.getElementById("paper-btn")
 const scissorsBtn = document.getElementById("scissors-btn")
 const battlebtn = document.getElementById("battle-btn")
-const userChoice = document.getElementById("user-choice")
-const computerChoice = document.getElementById("computer-choice")
+const fightArena = document.getElementById("fight-arena")
 const result = document.getElementById("Result")
 
 let u_choice = -1
@@ -11,23 +10,26 @@ let comp_choice = -1
 
 rockBtn.addEventListener("click", function(){
     u_choice = 0
-    userChoice.innerHTML = `
-    <img src="rock.png">
+    fightArena.innerHTML = `
+    Rock VS
     `
+    result.innerText = ""
 })
 
 paperBtn.addEventListener("click", function(){
     u_choice = 1
-    userChoice.innerHTML = `
-    <img src="paper.png">
+    fightArena.innerHTML = `
+    Paper VS
     `
+    result.innerText = ""
 })
 
 scissorsBtn.addEventListener("click", function(){
     u_choice = 2
-    userChoice.innerHTML = `
-    <img src="scissors.png">
+    fightArena.innerHTML = `
+    Scissors VS
     `
+    result.innerText = ""
 })
 
 battlebtn.addEventListener("click",function(){
@@ -35,18 +37,18 @@ battlebtn.addEventListener("click",function(){
     comp_choice = Math.floor(Math.random()*3)
 
     if(comp_choice==0){
-        computerChoice.innerHTML = `
-        <img src="rock.png">
+        fightArena.innerHTML += `
+        Rock
         `
     }
     else if(comp_choice==1){
-        computerChoice.innerHTML = `
-        <img src="paper.png">
+        fightArena.innerHTML += `
+        Paper
         `
     }
     else{
-        computerChoice.innerHTML = `
-        <img src="scissors.png">
+        fightArena.innerHTML += `
+        Scissors
         `
     }
     

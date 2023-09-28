@@ -2,6 +2,11 @@ body{
     text-align: center;
     font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans', Arial sans-serif;
     font-weight: bold;
+    background-image: url("aqua_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 h1{
@@ -14,21 +19,39 @@ h2{
     font-size: 30px;
 }
 
-#rock-btn{
+button{
+    color: aqua;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
     border: none;
+    height: 50px;
+    width: 200px;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 8px;
-    padding: 0%;
+    margin-bottom: 10px;
+}
+
+#rock-btn{
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 #paper-btn{
-    border: none;
-    border-radius: 8px;
-    padding: 0%;
+    margin-right: 200px;
 }
 
 #scissors-btn{
-    border: none;
-    border-radius: 8px;
-    padding: 0%;
+    margin-right: 200px;
+}
+
+#Result{
+    font-size: 40px;
+}
+
+#fight-arena{
+    margin: 80px;
+    font-size: 50px;
 }
 
